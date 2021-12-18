@@ -347,9 +347,10 @@ a {
 		transition: all 0.3s ease 0s;
 		cursor: pointer;
 		padding: 12px 50px;
+		border: 2px solid transparent;
 		@media (any-hover: hover) {
 			&:hover {
-				background: #f0f0f0;
+				border-color: #5f5f61;
 			}
 		}
 	}
@@ -609,6 +610,23 @@ a {
 	box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.1);
 	border-radius: 18px;
 	overflow: hidden;
+	cursor: pointer;
+	transition: all 0.3s ease 0s;
+	@media (any-hover: hover) {
+		&:hover {
+			background: #f37321;
+			color: #fff;
+			.benefits-card__img svg {
+				fill: #fff;
+			}
+			.benefits-card__title {
+				color: #fff;
+			}
+			.benefits-card__desc {
+				color: #fff;
+			}
+		}
+	}
 	&__body {
 		padding: 25px 24px;
 	}
@@ -621,6 +639,7 @@ a {
 		img {
 			width: 100%;
 			fill: #f37321;
+			transition: all 0.3s ease 0s;
 		}
 	}
 	&__title {
@@ -629,11 +648,13 @@ a {
 		font-size: 16px;
 		line-height: 23px;
 		color: #000000;
+		transition: all 0.3s ease 0s;
 	}
 	&__desc {
 		font-size: 14px;
 		line-height: 22px;
 		color: #49494f;
+		transition: all 0.3s ease 0s;
 	}
 }
 
